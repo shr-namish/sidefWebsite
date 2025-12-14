@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>SIDEF Consultants Pvt. Ltd.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/logo/Sidef_logo_dark.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="lib/vendor/aos/aos.css" rel="stylesheet">
+    <link href="lib/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="lib/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="lib/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="lib/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    /* Ensure all images are responsive */
+    /* img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    } */
+
+    /* Specific image adjustments for the About section */
+ 
+
+    /* Logo SVG responsiveness */
+    #about-logo svg {
+      width: 100%;
+      height: auto;
+      max-width: 235px; /* keeps it from stretching too much */
+    }
+
+    /* Org chart image responsiveness */
+    section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Padding adjustments for mobile screens */
+    @media (max-width: 768px) {
+
+        .about-customer img {
+            max-width: 70px;  /* scale down logos on mobile */
+            margin-bottom: 0.5rem;
+        }
+
+
+      .container, .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+
+      .about .row.g-5 {
+        gap: 1.5rem !important; /* reduces gap between columns on small screens */
+      }
+
+      .about .col-lg-6, .about .col-xl-7, .about .col-xl-5 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .about-customer img {
+        height: 60px;       /* all logos same height */
+        width: auto;        /* adjust width automatically to preserve ratio */
+        margin-right: 0.5rem;
+      }
+
+      .display-5 {
+        font-size: 1.8rem !important; /* reduce heading sizes on mobile */
+      }
+
+      .bg-breadcrumb .container {
+        padding: 2rem 1rem !important;
+      }
+    }
+  </style>
+
+
+
+
+</head>
+
+    <body>
+
+        <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-success" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
+        <div class="container px-0">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i
+                                class="fas fa-map-marker-alt text-success me-2"></i>77-Tara Marg Sinamangal,
+                            Kathmandu</a>
+                        <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-success me-2"></i>+977 1
+                            4468879, 4481538</a>
+                        <a href="#" class="text-muted me-0"><i
+                                class="fas fa-envelope text-success me-2"></i>sidef.consultant@mail.com.np</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-success btn-square nav-fill me-3" style="border-radius: 6px !important;"><i
+                                class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#" class="btn btn-success btn-square nav-fill me-0" style="border-radius: 6px !important;"><i
+                                class="fab fa-linkedin-in text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="position-absolute bg-light" style="left: 0; top: 0; width: 100%; height: 100%;">
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+                <a href="index.html" class="navbar-brand p-0 col-lg-8 col-xl-6" style="width: 20%; margin: 0;">
+                    <!-- <h1 class="text-primary m-0"><i class="fas fa-donate me-3"></i>Investa</h1> -->
+                    <img src="img/logo/Sidef_logo.jpg" alt="Logo" style="height: 100%; width: 20%;">
+                </a>
+                <button class="navbar-toggler" type="button col-lg-4 col-xl-6" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
+                        <a href="./index.html#services" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="./index.html#team" class="nav-item nav-link">Teams</a>
+                        <a href="client.html" class="nav-item nav-link active">Clients</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <!-- <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <a href="https://htmlcodex.com/downloading/?item=3338" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0">Buy Pro Version</a>
+                        </div> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="bg-breadcrumb-single"></div>
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Clients</h4>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Clients</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <section class="inner-page">
+        <!-- ======= Features Section ======= -->
+      <section id="features" class="features mb-5">
+        <div class="container">
+
+          <div class="section-title mt-4 mb-5" data-aos="fade-up">
+            <h4 class="text-success">Clients</h4>
+            <h1 class="display-5 mb-4"><img src="./img/clients/Government_of_Nepal.png" class="img-fluid btn-xl-square" alt="">Government of Nepal (GON)</h1>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box">
+                <h2>Department of Roads (DOR)</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
+                <h2>Ministry of Physical Infrastructure and Transport (MoPIT)</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+              <div class="icon-box">
+                <h2>Ministry of Federal Affairs and General Administration (MoFLAD)</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
+                <h2>Department of Urban Development and Building Construction (DUDBC)</h2>
+              </div>
+            </div>
+			<div class="col-lg-3 col-md-4 mt-4">
+             <div class="icon-box">
+               <h2>Department of Local Infrastructure Development and Agricultural Roads (DoLIDAR)</h2>
+             </div>
+           </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <h2>Dhulikhel Municipality</h2>
+              </div>
+            </div>
+			  <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <h2>Alternative Energy Promotion Center (AEPC)</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <h2>Ministry of Industry</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <h2>Ministry of Water Supply</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <h2>Local Governance and Community Development Programme (LGCDP)</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <h2>Damak Municipality</h2>
+              </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="container" style="margin-top: 4rem;">
+            <div class="section-title mt-4 mb-5" data-aos="fade-up">
+            <h1 class="display-5 mb-4" style="color: #083B24;">Associated With:</h1>
+          
+
+            <!-- Our Clients -->
+
+    <section id="clients" class="clients section" style="background-color: #f1f1f1;">
+
+
+      <div class="container">
+
+        <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center" id="swiper-wrapper-399c9f8983c19892" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-472px, 0px, 0px); transition-delay: 0ms;">
+            
+            
+            
+            
+            <div class="swiper-slide" style="width: 116px; margin-right: 120px;" role="group" aria-label="5 / 8" data-swiper-slide-index="4"><img src="./img/clients/64px-Asian_Development_Bank_logo.svg.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide swiper-slide-prev" style="width: 116px; margin-right: 120px;" role="group" aria-label="6 / 8" data-swiper-slide-index="5"><img src="./img/clients/world_bank.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide swiper-slide-active" style="width: 116px; margin-right: 120px;" role="group" aria-label="7 / 8" data-swiper-slide-index="6"><img src="./img/clients/helvetas.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide swiper-slide-next" style="width: 116px; margin-right: 120px;" role="group" aria-label="8 / 8" data-swiper-slide-index="7"><img src="./img/clients/fidic.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide" style="width: 116px; margin-right: 120px;" role="group" aria-label="1 / 8" data-swiper-slide-index="0"><img src="./img/clients/usAid_small.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide" style="width: 116px; margin-right: 120px;" role="group" aria-label="2 / 8" data-swiper-slide-index="1"><img src="img/clients/ARX_Logo.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide" style="width: 116px; margin-right: 120px;" role="group" aria-label="3 / 8" data-swiper-slide-index="2"><img src="img/clients/undp-logo-png_seeklogo-322648.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide" style="width: 116px; margin-right: 120px;" role="group" aria-label="4 / 8" data-swiper-slide-index="3"><img src="img/clients/ILO.png" class="img-fluid" alt=""></div>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+      </div>
+
+    </section>
+
+
+     <!-- End of Our Clients -->
+
+
+
+        
+        </div>
+        
+
+
+      </section>
+  	<!-- End Features Section -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                    <h3 class="text-white">SIDEF Consultants <span>Pvt. Ltd.</span></h3>
+                    <p>
+                        77-Tara Marg <br>Sinamangal, Kathmandu<br><br>
+                        <strong>Phone:</strong> +977 1 4468879, 4481538<br>
+                        <strong>Email:</strong> sidefconsultant@mail.com.np<br>
+                    </p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Explore</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Latest Projects</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> testimonial</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Our Team</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Our Services</h4>
+                        <a href=""><i class="fas fa-hard-hat me-2"></i>  Consultancy Services</a>
+                        <a href=""><i class="fas fa-project-diagram me-2"></i>  Projects Planning</a>
+                        <a href=""><i class="fas fa-flask me-2"></i>  Research & Studies</a>
+                        <a href=""><i class="fas fa-ruler-combined me-2"></i>  Survey & Design</a>
+                        <a href=""><i class="fas fa-people-carry me-2"></i>  Project Implementation</a>
+                        <a href=""><i class="fas fa-leaf me-2"></i>  Environmental Impact Assessment(EIA)</a>
+                        <a href=""><i class="fas fa-map me-2"></i>  Geographical Information System(GIS)</a>
+                        <a href=""><i class="fas fa-users me-2"></i>  Social Studies and Mobilization</a>
+                        
+                    </div>
+                </div>
+
+                
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-success"><i
+                                class="fas fa-copyright text-light me-2"></i>SIDEF Consultants Pvt. Ltd.</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                    Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/vendor/aos/aos.js"></script>
+    <script src="lib/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="lib/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="lib/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

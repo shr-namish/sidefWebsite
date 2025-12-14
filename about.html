@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>SIDEF Consultants Pvt. Ltd.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/logo/Sidef_logo_dark.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="lib/vendor/aos/aos.css" rel="stylesheet">
+    <link href="lib/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="lib/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="lib/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="lib/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    /* Ensure all images are responsive */
+    /* img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    } */
+
+    /* Specific image adjustments for the About section */
+ 
+
+    /* Logo SVG responsiveness */
+    #about-logo svg {
+      width: 100%;
+      height: auto;
+      max-width: 235px; /* keeps it from stretching too much */
+    }
+
+    /* Org chart image responsiveness */
+    section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Padding adjustments for mobile screens */
+    @media (max-width: 768px) {
+
+        .about-customer img {
+            max-width: 70px;  /* scale down logos on mobile */
+            margin-bottom: 0.5rem;
+        }
+
+
+      .container, .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+
+      .about .row.g-5 {
+        gap: 1.5rem !important; /* reduces gap between columns on small screens */
+      }
+
+      .about .col-lg-6, .about .col-xl-7, .about .col-xl-5 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .about-customer img {
+        height: 60px;       /* all logos same height */
+        width: auto;        /* adjust width automatically to preserve ratio */
+        margin-right: 0.5rem;
+      }
+
+      .display-5 {
+        font-size: 1.8rem !important; /* reduce heading sizes on mobile */
+      }
+
+      .bg-breadcrumb .container {
+        padding: 2rem 1rem !important;
+      }
+    }
+  </style>
+
+
+
+
+</head>
+
+    <body>
+
+        <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-success" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
+        <div class="container px-0">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i
+                                class="fas fa-map-marker-alt text-success me-2"></i>77-Tara Marg Sinamangal,
+                            Kathmandu</a>
+                        <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-success me-2"></i>+977 1
+                            4468879, 4481538</a>
+                        <a href="#" class="text-muted me-0"><i
+                                class="fas fa-envelope text-success me-2"></i>sidef.consultant@mail.com.np</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-success btn-square nav-fill me-3" style="border-radius: 6px !important;"><i
+                                class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#" class="btn btn-success btn-square nav-fill me-0" style="border-radius: 6px !important;"><i
+                                class="fab fa-linkedin-in text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="position-absolute bg-light" style="left: 0; top: 0; width: 100%; height: 100%;">
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+                <a href="index.html" class="navbar-brand p-0 col-lg-8 col-xl-6" style="width: 20%; margin: 0;">
+                    <!-- <h1 class="text-primary m-0"><i class="fas fa-donate me-3"></i>Investa</h1> -->
+                    <img src="img/logo/Sidef_logo.jpg" alt="Logo" style="height: 100%; width: 20%;">
+                </a>
+                <button class="navbar-toggler" type="button col-lg-4 col-xl-6" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <a href="./index.html#services" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="./index.html#team" class="nav-item nav-link">Teams</a>
+                        <a href="team.html" class="nav-item nav-link">Clients</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <!-- <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <a href="https://htmlcodex.com/downloading/?item=3338" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0">Buy Pro Version</a>
+                        </div> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="bg-breadcrumb-single"></div>
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">About</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- About Start -->
+    <div class="container-fluid about bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <!-- <img src="img/about-3.png" class="img-fluid w-100 rounded-top bg-white" alt="Image"> -->
+                        <img src="img/projects/4.jpg" class="img-fluid w-100 rounded-bottom" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <h4 class="text-success">About Us</h4>
+                    <h1 class="display-5 mb-4">Welcome to SIDeF</h1>
+                    <p class="text ps-4 mb-4">Established in 1994, Sustainable infrastructure development
+                        foundation(SIDeF) is a consultancy and research organisation in the field of sustainable rural
+                        infrastructure development with community participation. It has provided its services at present
+                        and in past in more than 30 districts of Nepal. SIDeF’s major strength lies in the planning and
+                        construction of low cost, environment friendly rural road construction. The organisation has
+                        gained extensive experience in working with the local government and the local community through
+                        partnership approach resulting in sustainable project output.
+                    </p>
+                    <div class="row g-4 justify-content-between mb-5">
+                        <div class="col-lg-8 col-xl-6">
+                            <p class="text-dark"><img src="./img/clients/fidic.png" style="width: 50px; height: 50px;" alt="">  A FIDIC Member
+                                Association</p>
+                            <p class="text-dark mb-0"><img src="./img/clients/scaef-1.png" style="width: 60px; height: auto;" alt="">  Member of
+                                National Association</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-6">
+                            <p class="text-dark"><i class="fas fa-check-circle text-success me-1"></i>Provided service
+                                across more than 40 districts of Nepal</p>
+                        </div>
+                    </div>
+                    <div class="row g-4 justify-content-between mb-5">
+                        <div class="col-xl-4"><a href="#" class="btn btn-primary rounded-pill py-3 px-5">Discover
+                                More</a></div>
+
+                        <div class="col-xl-8 mb-5">
+                            <div class="about-customer d-flex position-relative">
+
+                                <img src="img/clients/Government_of_Nepal.png" class="img-fluid btn-xl-square"
+                                    alt="Image">
+                                <img src="img/clients/usAid_small.png" class="img-fluid btn-xl-square" alt="Image">
+                                <img src="img/clients/64px-Asian_Development_Bank_logo.svg.png"
+                                    class="img-fluid btn-xl-square" alt="Image">
+                                <img src="img/clients/world_bank.png" class="img-fluid btn-xl-square" alt="Image">
+                                <img src="img/clients/helvetas.png" class="img-fluid btn-xl-square" alt="Image"
+                                    style="width: 100%;height: 20%;top: 25%;position: relative;">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row g-4 text-center align-items-center justify-content-center">
+                        <div class="col-sm-4">
+                            <div class="rounded p-4" style="background-color: #EDEDED;">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value fs-1 fw-bold text-dark"
+                                        data-toggle="counter-up">32</span>
+                                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">k+</h4>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center">
+                                    <p class="text-dark mb-0">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="rounded p-4" style="background-color: #083B24;">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value fs-1 fw-bold text-white"
+                                        data-toggle="counter-up">30</span>
+                                    <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center">
+                                    <p class="text-white mb-0">Years Of Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="rounded p-4" style="background-color: #EDEDED;">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value fs-1 fw-bold text-dark"
+                                        data-toggle="counter-up">97</span>
+                                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center">
+                                    <p class="text-dark mb-0">Team Members</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <section id="about-logo" class="inner-logo" style="margin-top: 4rem; margin-bottom: 4rem;">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+        <div class="col-lg-4 d-flex justify-content-center wow fadeInUp"  data-wow-delay="0.1s" >   
+        <svg version="1.1" id="SIDEF" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 width="235" height="235" viewBox="0 0 235 235" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+           <g id="sun">
+           	<path class="st0" d="M161.6,92.6c0,8.8-2.8,16.9-7.7,23.5h-4.8l-25-17.9l-10,11h-10.4L85.6,75.1c6.5-13.3,20.2-22.5,36-22.5
+           		C143.7,52.6,161.6,70.5,161.6,92.6z"/>
+           </g>
+           <g id="border">
+           	<polyline class="st1" points="30,193.4 30,41.6 205.4,41.6 205.4,69 	"/>
+           </g>
+           <g id="sidef">
+           	<path class="st2" d="M24.9,139.7"/>
+           	<path class="st3" d="M48.2,149.9l32.9,2l-2.5,24.7L66,176.2l1.5-15.9H43.8L30,193.4h64.2l3.1-57.8l-24-0.8l1.5-21.1
+           		c1.4-9.4,6.9-2.2,6.9-2.2l15.6,15v-10.8L76.7,74.4l-6.9,5.1l-6.9,24l-6.9,8L48.2,149.9"/>
+           	<polygon class="st3" points="100.9,122.3 99.1,193.4 181.9,193.4 175.2,177.1 161.4,177.4 157.9,163 171.8,162.3 161.6,129.2
+           		146.1,123.5 146.3,138.1 142.8,138.3 141.6,122.3 125.3,104.5 113,120.1 113.2,136.9 108,136.6 108.5,117.6 	"/>
+           	<polygon class="st4" points="123.6,121.1 130.5,125.7 134,175.4 126.3,175.4 	"/>
+           	<path class="st4" d="M155,138.3v10.6h5.9C160.9,149,160.6,140.1,155,138.3z"/>
+           	<path class="st3" d="M165.3,130.2l20.5,63.2h16.8l-13.1-31.6h13.1l-5.7-12.8h-13l-6.1-15h14.1c0,0-6.2-12.3-15.6-16.9
+           		c-0.6-0.3-1.3-0.2-1.8,0.2C171.9,119.3,164,126,165.3,130.2z"/>
+           	<path class="st2" d="M231.6,138.3"/>
+           </g>
+           <g id="upper-half">
+           	<path class="st5" d="M92.2,161.4l43.1-47.1l68.9,68.2h9.2c12.6-18.5,20-40.9,20-65c0-64-51.9-115.9-115.9-115.9
+           		C73,1.6,34.4,26.6,15,63.4l52,98H92.2z"/>
+           </g>
+           <g id="bottom-half">
+           	<path class="st6" d="M135.8,132.1l-38.1,41.7h-38l-51-96.1C4.1,90,1.6,103.5,1.6,117.5c0,64,51.9,115.9,115.9,115.9
+           		c34.3,0,65.2-14.9,86.4-38.7h-4.6L135.8,132.1z"/>
+           	<path class="st7" d="M204.3,182.5l-68.9-68.2l-43.1,47.1H67l-52-98c-0.6,1.1-1.2,2.2-1.8,3.3c-1.7,3.5-3.2,7.1-4.6,10.8l51,96.1h38
+           		l38.1-41.7l63.4,62.7h4.6c2.6-2.9,5.1-6,7.4-9.1h0.1c0.7-1,1.4-2.1,2.1-3.1H204.3z"/>
+           </g>
+           </svg>
+        </div>
+      <div class="col-lg-8">
+        <!-- <h1 > Who Are We? </h1> -->
+        <h1 class="display-5 mb-4">Evolution of the Green Road Concept</h1>
+        <p>
+          Sustainable Infrastructure Development Foundation (SIDeF) was established as a civil engineering consultancy firm in 1994 now registered as SIDEF Consultants Private Limited. Its directors Hare Ram Shrestha and Govind Narayan Mallik were previously employed by GTZ as Team Members/Road Engineers in Dhading Development Project (DDP/GTZ) since May 1988. </p>
+        <p>Two roads in Dhading district supported by DDP/GTZ adopted the following basic principles like labour-based, environment-friendly, and participatory construction techniques. The roads constructed in Dhading district were later popularly named as "Green Roads" and the approach of construction by following the aforementioned principles was named as the "Green Road Concept". This approach of road construction received wide recognition and reputation. Many donors and INGOs found it appropriate for Nepal and other places having similar mountainous topography. With increasing popularity of the approach, it was felt to diversify the experience gained in the DDP. With this view, SIDeF was established in 1994. Since 1994 SIDeF is actively working as infrastructure consultant for various organizations.</p>
+</div>
+<div class="col-lg-12">
+<p>SIDeF was involved in replication of this participatory, environment-friendly, road building approach in Makwanpur district of Nepal with the assistance of PLAN International and in Gorkha and Sankhuwasabha districts with the assistance of GTZ. It also executed community-based infrastructure development projects (comprising rural roads, trails, irrigation schemes, river training & agro - forestry) in Parbat, Baglung, Surkhet, Dailekh, Pyuthan, Mugu and Kalikot districts under the Rural Community Infrastructure Works (RCIW) Programme (WFP/GTZ/HMG). SIDeF is also involved in training activities on slope stabilisation, bioengineering techniques and environment friendly road construction and maintenance for various projects in Nepal as well as for the participants from Bhutan and the Phillipines.</p>
+      </div>
+    </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+        <h1 class="display-5 mb-5 d-flex justify-content-center">Organization Structure</h1>
+
+        <!-- <div style="width: 100%; height: 38rem;justify-content: center;display: flex;">
+            <img src="./img/projects/org_chart.jpg" style="width: auto;height: 100%;" alt="">
+        </div> -->
+
+        <div class="portfolio-item filter-org mt-4" style="justify-content: center;display: flex;">
+            <a href="./img/projects/org_chart.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="portfolio-wrap">
+              <img src="./img/projects/org_chart.jpg" class="img-fluid" alt="">
+            </div></a>
+          </div>
+
+
+    </section>
+
+
+    <section class="container-fluid about" style="padding: 6rem;">
+        <h1 class="display-5 mb-4 d-flex">History</h1>
+        <p>SIDeF has also been engaged in the transport planning and formulation of rural development programme in more than 15 districts of Nepal with several donors like EU, GTZ, SDC/Helvetas, WFP, World Bank, ADB, DFID etc. in coordination with governmental agencies and local bodies. SIDeF’s senior professional was engaged as Training Co-ordinator for the Bioengineering Training provided to the engineers and overseers of the DoR, Consultants and Contractors working in bio–engineering sector, especially for the GEU with the assistance of DFID. SIDeF professionals have successfully carried out project assessment of several projects including roads and bridges.</p>
+        <p>SIDeF has established a Geographic Information System (GIS) unit to provide the services in the field of preparation, digitisation, analysis and interpretation of maps and is planned to establish the GPS (Global Positioning System) based survey unit. SIDeF has completed the digitization of 3 layers (land use, land system and land capability) of 20 PDDP districts. SIDeF prepared the digital database of both biophysical and socio-economic layer of selected pocket area of 10 VDCs of Sindhupalchowk district and digitization of data of eight districts for LGP/UNDP, in which 14 layers of biographical data was digitised. GIS based tools have been widely applied in preparation of transport masterplans.</p>
+    </section>
+
+
+    <section class="container-fluid about" style="padding: 0 6rem 6rem 6rem;">
+        <h1 class="display-5 mb-4 d-flex">Vision</h1>
+        <p>With the passage of time, SIDeF has diversified its field of activities in planning, design and construction supervision of major engineering projects in the field of highways/feeder roads, urban water supply projects, irrigation projects, urban development projects, river diversion projects and many others.</p>
+                <p>SIDeF has completed survey, design, environmental study, and construction supervision of more than 1,500 kilometres of strategic roads in Nepal including Surkhet – Jumla Highway and seven feeder roads. It completed planning, design and supervision of water supply, sewerage, urban transport and other urban development activities under ADB funded Urban Environment Improvement Project in Hetauda and Dhulikhel towns and city water supply projects in Ghorahi and Tulsipur towns under STWSSSP. It is also involved in design of water supply schemes in several towns under World Bank financed Co-financing Project.</p>
+                <p>SIDeF has been involved in national priority water resources projects in the field of irrigation and river diversion. It completed Community Irrigation Project in 12 mid-western/far-western districts with total command area more than 7,500 Hectares. It has been involved in project support services of WRMP and design of irrigation sub-projects in Medium Irrigation Project under Department of Irrigation. Currently, it is involved in design review and construction supervision of 12-Kilometre-long tunnel for river diversion in Bheri Babai Diversion Multipurpose Project in western Nepal.</p>
+                <p>SIDeF has completed design and supervision of transportation improvement works (city core area pavement and walk-way improvement) in Kathmandu City under ADB financed Kathmandu Sustainable Urban Transport Project.</p>
+    </section>
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                    <h3 class="text-white">SIDEF Consultants <span>Pvt. Ltd.</span></h3>
+                    <p>
+                        77-Tara Marg <br>Sinamangal, Kathmandu<br><br>
+                        <strong>Phone:</strong> +977 1 4468879, 4481538<br>
+                        <strong>Email:</strong> sidefconsultant@mail.com.np<br>
+                    </p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Explore</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Latest Projects</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> testimonial</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Our Team</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Our Services</h4>
+                        <a href=""><i class="fas fa-hard-hat me-2"></i>  Consultancy Services</a>
+                        <a href=""><i class="fas fa-project-diagram me-2"></i>  Projects Planning</a>
+                        <a href=""><i class="fas fa-flask me-2"></i>  Research & Studies</a>
+                        <a href=""><i class="fas fa-ruler-combined me-2"></i>  Survey & Design</a>
+                        <a href=""><i class="fas fa-people-carry me-2"></i>  Project Implementation</a>
+                        <a href=""><i class="fas fa-leaf me-2"></i>  Environmental Impact Assessment(EIA)</a>
+                        <a href=""><i class="fas fa-map me-2"></i>  Geographical Information System(GIS)</a>
+                        <a href=""><i class="fas fa-users me-2"></i>  Social Studies and Mobilization</a>
+                        
+                    </div>
+                </div>
+
+                
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-success"><i
+                                class="fas fa-copyright text-light me-2"></i>SIDEF Consultants Pvt. Ltd.</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                    Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/vendor/aos/aos.js"></script>
+    <script src="lib/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="lib/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="lib/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
